@@ -52,8 +52,8 @@ describe("Chart Rendering Test", () => {
     const consoleErrors = await captureConsoleErrors(driver);
     expect(consoleErrors.length).toBe(0);
     expect(leafletContainer).not.toBeNull();
-    expect(canvases.length).toBeGreaterThan(0, 'No canvases found');
-    expect(nodesRendered).toBe(nodesPresent, 'Nodes not rendered');
-    expect(linksRendered).toBe(linksPresent, 'Links not rendered');
+    expect(canvases.length).toBeGreaterThan(0);
+    expect(nodesRendered).toBe(nodesPresent);
+    expect(linksRendered).toBe(linksPresent);
   });
 });
