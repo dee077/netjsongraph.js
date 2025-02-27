@@ -79,7 +79,7 @@ jobs:
 
       - name: Check chrome and chromedriver version
         run: |
-          chrome --version
+          google-chrome --version
           which chrome
           chromedriver --version
           which chromedriver
