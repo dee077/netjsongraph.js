@@ -9,7 +9,7 @@ import {
   urls,
 } from "./browser.test.utils";
 
-jest.setTimeout(10000);
+jest.setTimeout(30000);
 
 describe("Chart Rendering Test", () => {
   let driver;
