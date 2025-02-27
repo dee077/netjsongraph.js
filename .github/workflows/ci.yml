@@ -83,8 +83,11 @@ jobs:
           chromedriver --version
           which chromedriver
 
-      - name: Tests
-        run: yarn coverage
+      - name: Unit tests in parallel
+        run: yarn coverage --testPathIgnorePatterns=test/netjsongraph.browser.test.js
+
+      - name: Browser tests
+        run: yarn test --runInBand test/netjsongraph.browser.test.js
 
       - name: Coveralls
         uses: coverallsapp/github-action@master
